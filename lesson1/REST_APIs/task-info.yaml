@@ -73,16 +73,16 @@ files:
 - name: src/OnlineRecipeDatabase.java
   visible: true
   placeholders:
-  - offset: 525
+  - offset: 539
     length: 120
     placeholder_text: "/* TODO \nYou have to use the url to retrieve the contents\
       \ of the website. \nThis will be a String, but in JSON format. */"
     initial_state:
       length: 120
-      offset: 525
+      offset: 539
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |2-
 
               // From now on is like reading from the keyboard...
@@ -94,39 +94,39 @@ files:
 
               }
               scan.close();
-  - offset: 661
-    length: 44
+  - offset: 1170
+    length: 43
     placeholder_text: "/* TODO \nRemember to return a JSON object.*/"
     initial_state:
-      length: 44
-      offset: 661
+      length: 43
+      offset: 1170
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject())
-  - offset: 854
+  - offset: 1362
     length: 43
     placeholder_text: "/* TODO \nFill in this data type (Object) */"
     initial_state:
       length: 43
-      offset: 854
+      offset: 1362
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: URL
-  - offset: 908
+  - offset: 1424
     length: 41
     placeholder_text: |-
       /* TODO
       Fill in this datatype (Object) */
     initial_state:
       length: 41
-      offset: 908
+      offset: 1424
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: URL
-  - offset: 978
+  - offset: 1494
     length: 52
     placeholder_text: |-
       /* TODO
@@ -134,10 +134,10 @@ files:
        */
     initial_state:
       length: 52
-      offset: 978
+      offset: 1494
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
        // From now on is like reading from the keyboard...
               Scanner scan = new Scanner(url.openStream());
@@ -148,27 +148,27 @@ files:
 
               }
               scan.close();
-  - offset: 1046
-    length: 42
+  - offset: 1619
+    length: 41
     placeholder_text: "/* TODO \nreturn the appropriate result.\n*/"
     initial_state:
-      length: 42
-      offset: 1046
+      length: 41
+      offset: 1619
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject());
-  - offset: 1190
+  - offset: 1762
     length: 172
     placeholder_text: "/* TODO \nThis should return a String with each recipe in three\
       \ lines:\nTitle:the title of the recipe\nLink:the link to the recipe\nIngredients:The\
       \ ingredients of teh recipe.*/"
     initial_state:
       length: 172
-      offset: 1190
+      offset: 1762
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       JsonArray recipes = (JsonArray) doc.get("results");
               for(Object r : recipes){
@@ -177,16 +177,16 @@ files:
                   results += "link:"+(String)obj.get("href")+"\n";
                   results += "ingredients:"+(String)obj.get("ingredients")+"\n";
               }
-  - offset: 1460
+  - offset: 2644
     length: 116
     placeholder_text: "/* TODO\nGiven a String with some text in it, write that text\
       \ to a file. \nThe name of the file is given in outfile */"
     initial_state:
       length: 116
-      offset: 1460
+      offset: 2662
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       try(DataOutputStream out = new DataOutputStream(new FileOutputStream(outfile))){
                   out.writeBytes(text);
@@ -1696,5 +1696,11 @@ files:
     \ new StringBuilder();\n\t\tsb.append(this.type.toString()).append(\"(\").append(this.value).append(\"\
     )\");\n\t\treturn sb.toString();\n\t}\n}\n"
   learner_created: false
-status: Unchecked
+- name: test.txt
+  visible: true
+  learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 23 Feb 2021 01:09:08 UTC
 record: -1

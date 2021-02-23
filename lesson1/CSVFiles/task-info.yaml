@@ -9,7 +9,7 @@ files:
       /* TODO.
       Change what needs to go here to start reading "filename" */
     initial_state:
-      length: 68
+      length: 122
       offset: 282
     initialized_from_dependency: false
     selected: true
@@ -20,8 +20,8 @@ files:
     placeholder_text: "/* TODO \nCreate a byte array of about 1024 bytes or however\
       \ many bytes you want. */"
     initial_state:
-      length: 83
-      offset: 381
+      length: 96
+      offset: 435
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -33,7 +33,7 @@ files:
       \ method. */"
     initial_state:
       length: 145
-      offset: 506
+      offset: 573
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -45,8 +45,8 @@ files:
     length: 13
     placeholder_text: "/* TODO \nPut the correct Exception here. */"
     initial_state:
-      length: 43
-      offset: 669
+      length: 13
+      offset: 966
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -56,8 +56,8 @@ files:
     placeholder_text: "/* TODO \nReturn a Databse object initialized with the contents\
       \ read. */"
     initial_state:
-      length: 71
-      offset: 802
+      length: 94
+      offset: 1069
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -101,7 +101,7 @@ files:
     placeholder_text: "/* TODO \nThis constructor should take the contents of a CSV\
       \ file and initialize the memember variables of the Database class.\n*/"
     initial_state:
-      length: 128
+      length: 500
       offset: 613
     initialized_from_dependency: false
     selected: true
@@ -120,8 +120,8 @@ files:
       /* TODO */
       This method should return the data contained on row "row" and the column matching  @columname
     initial_state:
-      length: 104
-      offset: 804
+      length: 415
+      offset: 1176
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -149,5 +149,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Sat, 13 Feb 2021 05:51:30 UTC
+  time: Tue, 23 Feb 2021 01:07:59 UTC
 record: -1

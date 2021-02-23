@@ -13,7 +13,7 @@ public class Tests {
     Database db = new Database(doc);
     // put your test here
     String contents = t.readFile("./test/restaurant-data.json");
-    Assert.assertEquals("Your readFile method is not reading the file correctly.",20423,contents.length());
+    Assert.assertEquals("Your readFile method is not reading the file correctly.",20393,contents.length());
     Assert.assertTrue("Are you sure you loaded a JsonObject?",doc.containsKey("restaurants"));
     JsonArray restaurants = (JsonArray)doc.get("restaurants");
     Assert.assertEquals("Loaded wrong number of restaurants",10,restaurants.size());
